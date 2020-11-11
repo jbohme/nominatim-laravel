@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "NominatimLaravel\\NominatimLaravelProvider"
+                "NominatimLaravel\\Providers\\NominatimLaravelProvider"
             ]
         }
     }
