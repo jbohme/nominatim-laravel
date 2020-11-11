@@ -1,0 +1,30 @@
+{
+    "name": "jbohme/nominatim-laravel",
+    "type": "library",
+    "description": "Wrapper for Nominatim API to Laravel",
+    "keywords": ["geo", "geolocation", "open street map", "osm", "nominatim", "web service", "laravel"],
+    "homepage": "https://github.com/jbohme/php-nominatim",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "José Bohme",
+            "email": "jose_berna_dino@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "@stable"
+    },
+    "autoload": {
+        "psr-4": { "NominatimLaravel\\": "src"}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NominatimLaravel\\NominatimLaravelProvider"
+            ]
+        }
+    }
+}
