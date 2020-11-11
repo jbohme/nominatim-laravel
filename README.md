@@ -1,7 +1,7 @@
 Nominatim Laravel
 ================
-
-
+[![Latest Stable Version](https://poser.pugx.org/jbohme/nominatim-laravel/v)](//packagist.org/packages/jbohme/nominatim-laravel)
+[![License](https://poser.pugx.org/jbohme/nominatim-laravel/license)](//packagist.org/packages/jbohme/nominatim-laravel)
 
 A simple interface to OSM Nominatim.
 
