@@ -1,11 +1,7 @@
 Nominatim Laravel
 ================
 
-[![Latest Stable Version](https://poser.pugx.org/maxh/php-nominatim/v/stable)](https://packagist.org/packages/maxh/php-nominatim)
-[![Build Status](https://travis-ci.org/maxhelias/php-nominatim.svg?branch=master)](https://travis-ci.org/maxhelias/php-nominatim)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/maxhelias/php-nominatim/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/maxhelias/php-nominatim/?branch=master)
-[![Total Downloads](https://poser.pugx.org/maxh/php-nominatim/downloads)](https://packagist.org/packages/maxh/php-nominatim)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/maxhelias/php-nominatim/blob/master/LICENSE)
+
 
 A simple interface to OSM Nominatim.
 
@@ -18,11 +14,8 @@ Installation
 Install the package through [composer](http://getcomposer.org):
 
 ```bash
-composer require maxh/php-nominatim
+composer require jbohme/nominatim-laravel
 ```
-
-Make sure, that you include the composer [autoloader](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
-somewhere in your codebase.
 
 Basic usage
 -----------
@@ -30,7 +23,7 @@ Basic usage
 Create a new instance of Nominatim.
 
 ```php
-use maxh\Nominatim\Nominatim;
+use NominatimLaravel\Content\Nominatim;
 
 $url = "http://nominatim.openstreetmap.org/";
 $nominatim = new Nominatim($url);
@@ -148,7 +141,8 @@ $nominatim = new Nominatim($url, $defaultHeader, $client);
 Note
 ----
 
-This projet was inpired by the [Opendi/nominatim](https://github.com/opendi/nominatim) project with more features like reverse query, support of the xml format, customize HTTP client and more on which i work.
+This projet was inpired by the [maxhelias/php-nominatim](https://github.com/maxhelias/php-nominatim).
+The code has been adapted to the Laravel standard for future implementations.
 
 Recall Usage Policy Nominatim 
 -----------------------------
