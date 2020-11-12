@@ -16,6 +16,15 @@ Install the package through [composer](http://getcomposer.org):
 ```bash
 composer require jbohme/nominatim-laravel
 ```
+You must publish a project configuration with:
+
+```bash
+php artisan vendor:publish
+php artisan config:cache
+```
+After that the file *config/nominatim.php* will be ready.
+
+If you are going to use a custom url, the NOMINATIM_URL parameter must be included in the .env
 
 Basic usage
 -----------
