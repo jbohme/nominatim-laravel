@@ -187,6 +187,16 @@ abstract class Query implements QueryInterface
     }
 
     /**
+    * Include additional query parameter in URL.
+    * @param bool $tags
+    * @return $this
+    */
+    final public function setQuery($index, $value): array
+    {
+        return $this->query[$index] = $value;
+    }
+
+    /**
      * Get format.
      * @return string
      */
