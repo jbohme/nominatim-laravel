@@ -187,16 +187,6 @@ abstract class Query implements QueryInterface
     }
 
     /**
-    * Include additional query parameter in URL.
-    * @param bool $tags
-    * @return $this
-    */
-    final public function setQuery($index, $value): array
-    {
-        return $this->query[$index] = $value;
-    }
-
-    /**
      * Get format.
      * @return string
      */
@@ -230,5 +220,18 @@ abstract class Query implements QueryInterface
     protected function setFormat(string $format): void
     {
         $this->format = $this->query['format'] = $format;
+    }
+
+     /**
+     * Include additional query parameter in URL.
+     * @param $index
+     * @param $value
+     * @return self
+     */
+    public function addQuery($index, $value): self
+    {
+        $this->query[$index] = $value;
+
+        return $this;
     }
 }
