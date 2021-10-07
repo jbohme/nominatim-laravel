@@ -153,7 +153,7 @@ class Nominatim
         $request = new Request('GET', $url, array_merge($this->defaultHeaders, $headers));
 
         //Convert the query array to string with space replace to +
-        $query = \GuzzleHttp\Psr7\build_query($nRequest->getQuery(), PHP_QUERY_RFC1738);
+        $query = \GuzzleHttp\Psr7\Query::build($nRequest->getQuery(), PHP_QUERY_RFC1738);
 
         $url = $request->getUri()->withQuery($query);
         $request = $request->withUri($url);
